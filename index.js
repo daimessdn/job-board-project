@@ -4,6 +4,7 @@ const path = require("path");
 const app = express();
 
 app.use(express.json());
+app.use("/src", express.static("src"));
 
 const generateHex = () => {
     const availableDigit = "1234567890abcdef";
